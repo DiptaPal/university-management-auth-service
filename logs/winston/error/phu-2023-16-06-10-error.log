@@ -1,0 +1,55 @@
+{
+  errno: undefined,
+  code: 'ETIMEOUT',
+  syscall: 'querySrv',
+  hostname: '_mongodb._tcp.cluster0.tzt3ccm.mongodb.net',
+  level: 'error',
+  message: 'Failed to connect database querySrv ETIMEOUT _mongodb._tcp.cluster0.tzt3ccm.mongodb.net',
+  stack: 'Error: querySrv ETIMEOUT _mongodb._tcp.cluster0.tzt3ccm.mongodb.net\n' +
+    '    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:251:17)',
+  label: 'UM',
+  timestamp: '2023-06-16T04:15:34.755Z'
+}
+{
+  errno: undefined,
+  code: 'ECONNREFUSED',
+  syscall: 'querySrv',
+  hostname: '_mongodb._tcp.cluster0.tzt3ccm.mongodb.net',
+  level: 'error',
+  message: 'Failed to connect database querySrv ECONNREFUSED _mongodb._tcp.cluster0.tzt3ccm.mongodb.net',
+  stack: 'Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.tzt3ccm.mongodb.net\n' +
+    '    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:251:17)',
+  label: 'UM',
+  timestamp: '2023-06-16T04:17:10.508Z'
+}
+{
+  errno: undefined,
+  code: 'ECONNREFUSED',
+  syscall: 'querySrv',
+  hostname: '_mongodb._tcp.cluster0.tzt3ccm.mongodb.net',
+  level: 'error',
+  message: 'Failed to connect database querySrv ECONNREFUSED _mongodb._tcp.cluster0.tzt3ccm.mongodb.net',
+  stack: 'Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.tzt3ccm.mongodb.net\n' +
+    '    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:251:17)',
+  label: 'UM',
+  timestamp: '2023-06-16T04:17:13.046Z'
+}
+{
+  errno: undefined,
+  code: 'ECONNREFUSED',
+  syscall: 'querySrv',
+  hostname: '_mongodb._tcp.cluster0.tzt3ccm.mongodb.net',
+  level: 'error',
+  message: 'Failed to connect database querySrv ECONNREFUSED _mongodb._tcp.cluster0.tzt3ccm.mongodb.net',
+  stack: 'Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.tzt3ccm.mongodb.net\n' +
+    '    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:251:17)',
+  label: 'UM',
+  timestamp: '2023-06-16T04:17:20.644Z'
+}
+{ level: 'error', label: 'UM', timestamp: '2023-06-16T04:24:11.124Z' }
+{ level: 'error', label: 'UM', timestamp: '2023-06-16T04:26:05.945Z' }
+{ level: 'error', label: 'UM', timestamp: '2023-06-16T04:26:53.412Z' }
+{ level: 'error', label: 'UM', timestamp: '2023-06-16T04:30:49.705Z' }
+{ level: 'error', label: 'UM', timestamp: '2023-06-16T04:35:01.803Z' }
+{ level: 'error', label: 'UM', timestamp: '2023-06-16T04:41:31.585Z' }
+{ level: 'error', label: 'UM', timestamp: '2023-06-16T04:41:57.279Z' }
