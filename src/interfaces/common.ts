@@ -1,6 +1,6 @@
 import { IGenericErrorMessage } from './error'
 
-export type IGenericErrorResponse = {
+export type IGenericResponse = {
   statusCode: number
   message: string
   errorMessage: IGenericErrorMessage[]

@@ -1,8 +1,9 @@
 import express, { Application } from 'express'
 import cors from 'cors'
-import router from './app/modules/users/users.route'
-// import { logger } from './shared/logger'
 import globalErrorHandler from './app/middlewares/globalErrorHandler'
+import { UserRoutes } from './app/modules/users/user.route'
+// import { logger } from './shared/logger'
+
 const app: Application = express()
 app.use(cors())
 
@@ -12,15 +13,13 @@ app.use(express.urlencoded({ extended: true }))
 
 // logger.info(app.get('env'))
 
-//application route
-app.use('/api/v1/users', router)
-
-// //Testing
-// app.get('/', (req: Request, res: Response, next: NextFunction) => {
-//   res.send('Hello World!')
-//   throw new ApiError(400, 'Error khaisi re vai')
-//   next('Error khaisi re vai') //error
+//Testing
+// app.get('/', async (req: Request, res: Response, next: NextFunction) => {
+//   console.log(x)
 // })
+
+//application route
+app.use('/api/v1/users', UserRoutes.router)
 
 //global error handler
 app.use(globalErrorHandler)
