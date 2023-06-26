@@ -1,29 +1,36 @@
 /* eslint-disable no-unused-expressions */
-import { ErrorRequestHandler } from 'express'
-import { Error } from 'mongoose'
-import { IGenericErrorMessage } from '../../interfaces/error'
-import handleValidationError from '../../errors/handleValidationError'
-import config from '../../config'
-import ApiError from '../../errors/ApiError'
-import { errorLogger } from '../../shared/logger'
+import { ErrorRequestHandler } from 'express';
+import { Error } from 'mongoose';
+import { IGenericErrorMessage } from '../../interfaces/error';
+import handleValidationError from '../../errors/handleValidationError';
+import config from '../../config';
+import ApiError from '../../errors/ApiError';
+import { errorLogger } from '../../shared/logger';
+import { ZodError } from 'zod';
+import handleZodError from '../../errors/handleZodError';
 
 const globalErrorHandler: ErrorRequestHandler = (err, req, res, next) => {
   config.env === 'development'
     ? console.log('globalErrorHandler', err)
-    : errorLogger.error('globalErrorHandler', err)
+    : errorLogger.error('globalErrorHandler', err);
 
-  let statusCode = 500
-  let message = 'Something went wrong'
-  let errorMessage: IGenericErrorMessage[] = []
+  let statusCode = 500;
+  let message = 'Something went wrong';
+  let errorMessage: IGenericErrorMessage[] = [];
 
   if (err?.name === 'ValidationError') {
-    const simplifiedError = handleValidationError(err)
-    statusCode = simplifiedError.statusCode
-    message = simplifiedError.message
-    errorMessage = simplifiedError.errorMessage
+    const simplifiedError = handleValidationError(err);
+    statusCode = simplifiedError.statusCode;
+    message = simplifiedError.message;
+    errorMessage = simplifiedError.errorMessage;
+  } else if (err instanceof ZodError) {
+    const simplifiedError = handleZodError(err);
+    statusCode = simplifiedError.statusCode;
+    message = simplifiedError.message;
+    errorMessage = simplifiedError.errorMessage;
   } else if (err instanceof ApiError) {
-    statusCode = err?.statusCode
-    message = err?.message
+    statusCode = err?.statusCode;
+    message = err?.message;
     errorMessage = err?.message
       ? [
           {
@@ -31,9 +38,9 @@ const globalErrorHandler: ErrorRequestHandler = (err, req, res, next) => {
             message: err?.message,
           },
         ]
-      : []
+      : [];
   } else if (err instanceof Error) {
-    message = err?.message
+    message = err?.message;
     errorMessage = err?.message
       ? [
           {
@@ -41,7 +48,7 @@ const globalErrorHandler: ErrorRequestHandler = (err, req, res, next) => {
             message: err?.message,
           },
         ]
-      : []
+      : [];
   }
 
   res.status(statusCode).json({
@@ -49,9 +56,9 @@ const globalErrorHandler: ErrorRequestHandler = (err, req, res, next) => {
     message,
     errorMessage,
     stack: config.env !== 'production' ? err?.stack : undefined,
-  })
+  });
 
-  next()
-}
+  next();
+};
 
-export default globalErrorHandler
+export default globalErrorHandler;

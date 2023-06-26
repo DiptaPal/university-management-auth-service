@@ -1,0 +1,48 @@
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  label: 'UM',
+  timestamp: '2023-06-18T11:38:23.478Z'
+}
+{
+  message: 'server is listening on port 5000',
+  level: 'info',
+  label: 'UM',
+  timestamp: '2023-06-18T11:38:23.485Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  label: 'UM',
+  timestamp: '2023-06-18T11:42:33.352Z'
+}
+{
+  message: 'server is listening on port 5000',
+  level: 'info',
+  label: 'UM',
+  timestamp: '2023-06-18T11:42:33.360Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  label: 'UM',
+  timestamp: '2023-06-18T11:48:42.185Z'
+}
+{
+  message: 'server is listening on port 5000',
+  level: 'info',
+  label: 'UM',
+  timestamp: '2023-06-18T11:48:42.193Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  label: 'UM',
+  timestamp: '2023-06-18T11:50:15.527Z'
+}
+{
+  message: 'server is listening on port 5000',
+  level: 'info',
+  label: 'UM',
+  timestamp: '2023-06-18T11:50:15.543Z'
+}
