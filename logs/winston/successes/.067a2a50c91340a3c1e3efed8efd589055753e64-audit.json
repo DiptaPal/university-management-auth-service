@@ -1,0 +1,25 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "D:\\Programming Hero\\Web Level-2\\Mission-03 Be a NoSQL Backend Braniac\\Module-11 How to setup and organize your professionally\\university-management-auth-service\\logs\\winston\\successes\\.067a2a50c91340a3c1e3efed8efd589055753e64-audit.json",
+    "files": [
+        {
+            "date": 1685936131711,
+            "name": "D:\\Programming Hero\\Web Level-2\\Mission-03 Be a NoSQL Backend Braniac\\Module-11 How to setup and organize your professionally\\university-management-auth-service\\logs\\winston\\successes\\phu-2023-05-06-09-success.log",
+            "hash": "a73121dfcfefd12c59bad8eb87da56ce6567f19ad502b82eff156afea70bb3c8"
+        },
+        {
+            "date": 1685959505011,
+            "name": "D:\\Programming Hero\\Web Level-2\\Mission-03 Be a NoSQL Backend Braniac\\Module-11 How to setup and organize your professionally\\university-management-auth-service\\logs\\winston\\successes\\phu-2023-05-06-16-success.log",
+            "hash": "a824088b35381a346c3bdbbe9104552698fd855e265be431afdbfbfa4939e354"
+        },
+        {
+            "date": 1685963188673,
+            "name": "D:\\Programming Hero\\Web Level-2\\Mission-03 Be a NoSQL Backend Braniac\\Module-11 How to setup and organize your professionally\\university-management-auth-service\\logs\\winston\\successes\\phu-2023-05-06-17-success.log",
+            "hash": "c5e35bc5935b3bd98e72c387d91494c849eb5fc7825ca9e39541f8bf051096d4"
+        }
+    ],
+    "hashType": "sha256"
+}

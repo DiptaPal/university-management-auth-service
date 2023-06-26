@@ -1,0 +1,18 @@
+{
+  message: 'development',
+  level: 'info',
+  label: 'UM',
+  timestamp: '2023-06-05T03:35:31.719Z'
+}
+{
+  message: 'server is listening on port 5000',
+  level: 'info',
+  label: 'UM',
+  timestamp: '2023-06-05T03:35:31.746Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  label: 'UM',
+  timestamp: '2023-06-05T03:35:34.552Z'
+}
